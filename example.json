@@ -1,0 +1,16 @@
+{
+    "zfs": [
+        {
+            "dataset": "zfs-test/data",
+            "intervals": {
+                "1min": { "interval": 1, "keep": 30, "desc": "every minute, keep last 30 (30min)"},
+                "5min": { "interval": 5, "keep": 24, "desc": "every 5 minutes, keep last 24 (120min => 2h)"},
+                "10min": { "interval": 10, "keep": 24, "desc": "every 10 minutes, keep last 24 (240min => 4h)"},
+                "1hour": { "interval": 60, "keep": 24, "desc": "every hour, keep last 24 (1140min => 24h => 1d)"},
+                "1day": { "interval": 1140, "keep": 28, "desc": "every day, keep last 28 (28d ~ 1/13y)"},
+                "28days": { "interval": 40320, "keep": 26, "desc": "every 28 days, keep last 26 (728d ~ 2y)"},
+                "1year": { "interval": 524160, "keep": 11, "desc": "every 364 days, keep last 11 (4004d ~ 11y)"}
+            }
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "assc2",
+  "version": "0.0.1",
+  "description": "Automatic snapshot creation and retention for samba4 shadow_copy2 vfs",
+  "main": "assc2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir bin; pkg --out-path bin assc2.js --target node14-linux-x64"
+  },
+  "author": "Anton Engelhardt",
+  "license": "ISC",
+  "devDependencies": {
+    "pkg": "^4.4.9"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.4",
+    "yargs": "^16.2.0"
+  }
+}
