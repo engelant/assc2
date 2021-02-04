@@ -1,4 +1,5 @@
 # assc2 (auto-snapshot-shadow_copy2)
+**Only supports ZFS right now.**
 
 ## Warning
 Right now I'd call it an **ALPHA** at best.
@@ -119,6 +120,8 @@ You can see, that the 1min IDs have been removed from all but the newest 30 snap
 
 
 ### Integration with samba4
+For a given dataset *zfs-test/data*, which is mounted at /mnt/zfs-test/data the following config enables shadow_copy2 to use the auto generated snapshots. Have a look at the man page on [shadow_copy2](https://www.samba.org/samba/docs/current/man-html/vfs_shadow_copy2.8.html) for more details.
+
 ```
 [files]
 path = /mnt/zfs-test/data/files
